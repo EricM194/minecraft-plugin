@@ -1,4 +1,10 @@
 name: Customizeitemdamage
 version: '${project.version}'
-main: com.senate.customizeitemdamage.Customizeitemdamage
+main: com.senate.customizeitemdamage.Hook
 api-version: 1.17
+commands:
+  reduce_item_damage:
+    description: Set the chance of item taking damage
+permissions:
+  reduce_item_damage:
+    default: true
