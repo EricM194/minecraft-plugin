@@ -34,8 +34,8 @@ public class Hook extends JavaPlugin implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String arg, String[] args){
         if(cmd.getName().equalsIgnoreCase("reduce_item_damage")){
             if(args.length < 2){
-                sender.sendMessage(ChatColor.GRAY + "/reduce_item_damage 0 - Remove the chance of item taking damage");
-                sender.sendMessage(ChatColor.GRAY + "/reduce_item_damage 100 - Sets the chance of item taking damage to normal");
+                sender.sendMessage(ChatColor.GRAY + "/reduce_item_damage ITEM_NAME 0 - Remove the chance of item taking damage");
+                sender.sendMessage(ChatColor.GRAY + "/reduce_item_damage ITEM_NAME 100 - Sets the chance of item taking damage to normal");
                 return true;
             }
 
