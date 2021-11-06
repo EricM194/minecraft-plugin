@@ -1,0 +1,4 @@
+name: Customizeitemdamage
+version: '${project.version}'
+main: com.senate.customizeitemdamage.Customizeitemdamage
+api-version: 1.17
