@@ -1,4 +1,4 @@
-package main.java.com.senate.customizeitemdamage;
+package com.senate.customizeitemdamage;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
