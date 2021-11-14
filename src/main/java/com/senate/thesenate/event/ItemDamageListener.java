@@ -15,8 +15,8 @@ public class ItemDamageListener implements Listener {
     public void onPlayerItemDamageEvent(PlayerItemDamageEvent e) {
 
         try {
-            Integer damageChancePercentage = plugin.getConfig().getInt("ItemDamage." + e.getItem().getType());
-            if (damageChancePercentage != null && Math.random() * 100 > damageChancePercentage) {
+            int damageChancePercentage = plugin.getConfig().getInt("ItemDamage." + e.getItem().getType());
+            if (plugin.getConfig().contains("ItemDamage." + e.getItem().getType()) && Math.random() * 100 > damageChancePercentage) {
                 if (plugin.getConfig().getBoolean("Debug")) {
                     e.getPlayer().sendMessage(e.getItem().getType() + " damage cancelled");
                 }
