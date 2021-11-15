@@ -13,17 +13,16 @@ public class Debug implements CommandExecutor {
     Plugin plugin = Main.getPlugin(Main.class);
 
     public boolean onCommand(CommandSender sender, Command cmd, String arg, String[] args) {
-        if (cmd.getName().equalsIgnoreCase("debug")) {
-            if (args.length == 0) {
-                sender.sendMessage("Debug is set to " + plugin.getConfig().getBoolean("Debug"));
-            }
-            if (args.length == 1) {
-                plugin.getConfig().set("Debug", Boolean.parseBoolean(args[0])); //save that to the config
-                plugin.saveConfig();
-                plugin.saveDefaultConfig();
-                sender.sendMessage("Debug set to " + args[0]);
-            }
+        if (args.length == 0) {
+            sender.sendMessage("Debug is set to " + plugin.getConfig().getBoolean("Debug"));
         }
+        if (args.length == 1) {
+            plugin.getConfig().set("Debug", Boolean.parseBoolean(args[0])); //save that to the config
+            plugin.saveConfig();
+            plugin.saveDefaultConfig();
+            sender.sendMessage("Debug set to " + args[0]);
+        }
+
         return true;
     }
 }
