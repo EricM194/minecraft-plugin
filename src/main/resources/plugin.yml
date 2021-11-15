@@ -11,3 +11,7 @@ commands:
     description: enabled/disable debug mode
     usage: /<command> <true|false>
     permissions: senate.debug
+  Cords:
+    description: save and view cordinates
+    usage: /<command> <list|add|remove|name> [name] [X] [Y] [Z]
+    permissions: senate.cords

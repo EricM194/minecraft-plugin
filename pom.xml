@@ -6,7 +6,7 @@
 
     <groupId>com.senate</groupId>
     <artifactId>thesenate</artifactId>
-    <version>1.1</version>
+    <version>1.2</version>
     <packaging>jar</packaging>
 
     <name>The Senate Plugin</name>

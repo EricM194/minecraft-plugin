@@ -1,3 +1,5 @@
 ItemDamage:
   ELYTRA: 5
 Debug: false
+Cords:
+  zero: "0,0,0"

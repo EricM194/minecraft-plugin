@@ -24,6 +24,7 @@ public class Main extends JavaPlugin implements CommandExecutor {
         //add the commands
         Objects.requireNonNull(getCommand("SetItemDamage")).setExecutor(new SetItemDamage());
         Objects.requireNonNull(getCommand("Debug")).setExecutor(new Debug());
+        Objects.requireNonNull(getCommand("Cords")).setExecutor(new Cords());
 
 
         getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "Plugin TheSenate turned on");
