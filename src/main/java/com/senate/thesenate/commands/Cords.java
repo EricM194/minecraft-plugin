@@ -35,12 +35,12 @@ public class Cords implements CommandExecutor {
 
                     if (plugin.getConfig().contains("Cords." + args[0])) {
                         sender.sendMessage(args[0] + ": " + plugin.getConfig().getString("Cords." + args[0]));
-                        break;
                     }
                     return true;
 
                 case 2:
                     if (args[0].equalsIgnoreCase("add")) {
+
                         plugin.getConfig().set("Cords." + args[1], (int) player.getLocation().getX() + "," + (int) player.getLocation().getY() + "," + (int) player.getLocation().getZ()); //save that to the config
                         plugin.saveConfig();
                         plugin.saveDefaultConfig();
